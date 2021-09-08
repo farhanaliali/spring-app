@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+        name: ims-app
+        labels:
+                app: ims-app
+spec:
+        replicaset: 2
+        selector:
+                app: ims-app
+        template:
+                metadata:
+                        labels:
+                                app: ims-app
+                spec:
+                        containers:
+                          -     name: ims-app
+                                image: farhanluckali/ims-spring
+
