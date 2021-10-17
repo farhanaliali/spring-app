@@ -11,7 +11,7 @@ pipeline {
 
         stage('docker images build') {
             steps {
-                sh "whoami"
+                 sh "docker build -t imsapp ."
             }
         }
     }
