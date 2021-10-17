@@ -11,7 +11,7 @@ pipeline {
 
         stage('docker images build') {
             steps {
-                sh "sudo docker build -t imsapp ."
+                sh "uname -a"
             }
         }
     }
