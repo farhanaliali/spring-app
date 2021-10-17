@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage ('Clone Git') {
+        stage('Clone Git') {
 
-          stepss{
+          steps{
            git 'https://github.com/farhanaliali/spring-app.git'
         }
         }
