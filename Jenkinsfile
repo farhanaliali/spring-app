@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Git') {
 
           steps{
-           git 'https://github.com/farhanaliali/spring-app.git'
+           git branch: 'main', url: 'https://github.com/farhanaliali/spring-app.git'
         }
         }
 
