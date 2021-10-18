@@ -8,6 +8,16 @@ pipeline {
            git branch: 'main', url: 'https://github.com/farhanaliali/spring-app.git'
         }
         }
+        
+        stage('JDK 8'){
+        
+            tools {
+            jdk "jdk8"
+            }
+            steps {
+            java -version
+            }
+        }
 
         stage('docker images build') {
             steps {
