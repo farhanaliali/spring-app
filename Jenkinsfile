@@ -15,7 +15,7 @@ pipeline {
             jdk "jdk8"
             }
             steps {
-            java -version
+             sh  "java -version"
             }
         }
 
