@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+        name: mysql-server-ims
+        labels:
+                db: ims
+
+spec:
+        template:
+                metadata:
+                        label:
+                                db: ims
+                spec:
+                        containers:
+                          -     name: mysqldb
+                                image: mysql:latest
+                                env:
+                                   -   name: MYSQL_ROOT_PASSWORD
+                                       value: iceland
+                                   -   name: MYSQL_DATABASE
+                                       value: ims
