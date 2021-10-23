@@ -8,7 +8,7 @@ metadata:
 spec:
         template:
                 metadata:
-                        label:
+                        labels:
                                 db: ims
                 spec:
                         containers:
